@@ -52,7 +52,8 @@ void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_I2C1_Init(void);
 /* USER CODE BEGIN PFP */
-
+extern void setup(void);
+extern void loop(void);
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
@@ -91,7 +92,7 @@ int main(void)
   MX_GPIO_Init();
   MX_I2C1_Init();
   /* USER CODE BEGIN 2 */
-
+  setup();
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -99,7 +100,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-
+	loop();
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
