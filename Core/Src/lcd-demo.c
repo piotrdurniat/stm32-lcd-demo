@@ -2,7 +2,7 @@
  * lcd-demo.c
  *
  *  Created on: 30.03.2018
- *      Author: pawel
+ *      Author: Pawel Rogalinski
  */
 
 #include "LCD_tools.h"
@@ -15,7 +15,7 @@ void setup()
 {
 	LCD_init(&hi2c1, PCF8574T_ADDRESS, 16, 2);
 	LCD_ledOn();
-	createCustomChars();
+	//	createCustomChars();
 }
 
 void loop()
